@@ -1,13 +1,13 @@
 import React from 'react'
 import Container from './Container'
-// import Logo from '../assets/logo.png'
+import Logo from '../assets/logo.png'
 const Navebar = () => {
     return (
         <>
             <Container>
                 <div className='flex  items-center py-6'>
                     <div className='w-1/2'>
-                        {/* <div><img src={Logo} alt="" /></div> */}
+                        <div><img src={Logo} alt="" /></div>
                     </div>
 
                     <div className='w-1/2'>

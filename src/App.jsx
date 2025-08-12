@@ -4,6 +4,8 @@ import { createBrowserRouter, createRoutesFromElements, Route, RouterProvider } 
 import RootLayout from './Compunent/RootLayout'
 import Footer from './Compunent/Footer';
 import Navbar from './Compunent/Navbar';
+// import Banner from './Compunent/Banner';
+
 
 let router = createBrowserRouter(createRoutesFromElements(
   <Route element={<RootLayout/>}>
@@ -15,6 +17,7 @@ let router = createBrowserRouter(createRoutesFromElements(
   return (
     <> 
     <RouterProvider router={router}></RouterProvider>
+
     </>
   )
 }
