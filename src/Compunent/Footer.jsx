@@ -5,6 +5,7 @@ const Footer = () => {
   return (
     <>
       <section className='bg-[#F5F5F3] pb-32 pt-7 '>
+        <div><h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi voluptatem ducimus dignissimos fuga vel! Incidunt voluptatum maxime quos placeat numquam, ad tempore magni pariatur. Rem porro, reiciendis assumenda nam autem ducimus, totam illo expedita nobis delectus tenetur sunt mollitia, omnis reprehenderit ab qui itaque dolorum quaerat voluptate numquam nemo nesciunt! Nisi, ipsa, corporis eveniet ad suscipit asperiores quae, quod adipisci fugit dolorum inventore quas tempora est. Soluta nemo velit consequuntur vitae ea delectus iusto maxime! Saepe excepturi, exercitationem velit fuga ab voluptas molestias nostrum. Sit soluta minima voluptas impedit, perspiciatis quidem corrupti beatae mollitia nulla sint esse, sapiente nesciunt nihil?</h1></div>
         <Container>
           <div className='flex justify-between'>
             <div className='w-15%'>
