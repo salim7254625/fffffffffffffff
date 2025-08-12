@@ -86,7 +86,7 @@ const Banner = () => {
                                     </div>
                                     <div className='h-[30%] flex justify-center '>
                                         <div><h2 className='py-3 px-5 border-1 mr-2 border-[#000000] hover:bg-black hover:text-[#FFF]'>View Cart</h2></div>
-                                        <div><h2 className='py-3 px-5 border-1 ml-2 border-[#000000] hover:bg-black hover:text-[#FFF]'>Checkout</h2></div>
+                                        <div><h2 className='py-3 px-5 border-1 ml-2 border-[#000000] hover:bg-black hover:text-[#FFF]'>Checkout.</h2></div>
                                     </div>
                                 </div>
                             } 
