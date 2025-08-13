@@ -1,1 +1,24 @@
 @import "tailwindcss";
+
+.img{
+    position: relative;
+}
+.slick-dots{
+    position: absolute;
+    display: flex;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 150px;
+   
+   
+}.slick-active{
+    display: flex;
+ 
+}
+.slick-active button {
+   background-color: black;
+   width: 10px;
+   height: 50px;
+   padding: 15px 0 ;
+      
+}

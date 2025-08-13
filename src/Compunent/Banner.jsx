@@ -27,18 +27,18 @@ const Banner = () => {
                 setChekList(false)
             }
        
-        })
-    },[cateRef, chek])
+        },[cateRef,chek])
+    })
     return (
         <div>
             <Container>
 
-                <div className='flex justify-between items-center '>
+                <div className='flex justify-between items-center py-8 px-7 bg-[#F5F5F3]'>
                     <div className='w-1/4 flex items-center relative group'>
                         <div><FaBars /></div>
                         <div className=' pl-3 '><p>Shop by Category</p></div>
 
-                        <div className=' py-3 absolute top-[50px] left-0 w-[250px] opacity-0 group-hover:opacity-100'>
+                        <div className=' py-3 absolute top-[50px] left-0 w-[250px] opacity-0 group-hover:opacity-100 z-100'>
                             <ul className='bg-[#000000]'>
                                 <li className='text-[14px] text-[#ffffffac] pl-2 py-3 hover:border-1 border-[#fff] hover:pl-6 hover:text-[#FFF] hover:font-bold  '>Accesories</li>
                                 <li className='text-[14px] text-[#ffffffac] pl-2 py-3 hover:border-1 border-[#fff] hover:pl-6 hover:text-[#FFF] hover:font-bold  '>Furniture</li>
@@ -58,7 +58,7 @@ const Banner = () => {
                     </div>
 
 
-                    <div className='w-1/4 flex justify-end cursor-pointer'>
+                    <div className='w-1/4 flex justify-end cursor-pointer z-[100]'>
                         <div ref={cateRef} className='flex pr-9 relative'>
                             <div><FaUser /></div>
                             <div><MdArrowDropDownCircle /></div>
@@ -74,7 +74,7 @@ const Banner = () => {
                         <div className=' relative ' ref={chek} ><FaCartArrowDown />
 
                              {chekList &&
-                                <div className='w-[360px] h-[241px] border-2 border-amber-200 absolute top-8 left-[-100px] '>
+                                <div className='w-[360px] h-[241px] border-2 border-amber-200 absolute top-8 left-[-100px]  '>
                                     <div className='flex h-[50%] bg-[#F5F5F3]'>
                                         <div className=''><img className='pt-3 pl-3' src={Imgp} alt="" /></div>
                                         <div className='pt-5 pl-4'> <h2 className='font-bold text-[14px]'>Black Smart Watch</h2>

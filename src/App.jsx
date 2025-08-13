@@ -4,6 +4,7 @@ import { createBrowserRouter, createRoutesFromElements, Route, RouterProvider } 
 import RootLayout from './Compunent/RootLayout'
 import Footer from './Compunent/Footer';
 import Navbar from './Compunent/Navbar';
+// import Home from './page/Home';
 // import Banner from './Compunent/Banner';
 
 
