@@ -38,14 +38,14 @@ const Banner = () => {
                         <div><FaBars /></div>
                         <div className=' pl-3 '><p>Shop by Category</p></div>
 
-                        <div className=' py-3 absolute top-[50px] left-0 w-[250px] opacity-0 group-hover:opacity-100 z-100'>
+                        <div className=' py-3 absolute top-[50px] left-0 w-[250px] opacity-0 invisible group-hover:visible transition duration-500 ease-in-out group-hover:opacity-100 z-100'>
                             <ul className='bg-[#000000]'>
-                                <li className='text-[14px] text-[#ffffffac] pl-2 py-3 hover:border-1 border-[#fff] hover:pl-6 hover:text-[#FFF] hover:font-bold  '>Accesories</li>
-                                <li className='text-[14px] text-[#ffffffac] pl-2 py-3 hover:border-1 border-[#fff] hover:pl-6 hover:text-[#FFF] hover:font-bold  '>Furniture</li>
-                                <li className='text-[14px] text-[#ffffffac] pl-2 py-3 hover:border-1 border-[#fff] hover:pl-6 hover:text-[#FFF] hover:font-bold  '>Electronics</li>
-                                <li className='text-[14px] text-[#ffffffac] pl-2 py-3 hover:border-1 border-[#fff] hover:pl-6 hover:text-[#FFF] hover:font-bold  '>Clothes</li>
-                                <li className='text-[14px] text-[#ffffffac] pl-2 py-3 hover:border-1 border-[#fff] hover:pl-6 hover:text-[#FFF] hover:font-bold  '>Bags</li>
-                                <li className='text-[14px] text-[#ffffffac] pl-2 py-3 hover:border-1 border-[#fff] hover:pl-6 hover:text-[#FFF] hover:font-bold  '>Home appliances</li>
+                                <li className='text-[14px] text-[#ffffffac] pl-2 py-3 hover:border-1 border-[#fff] hover:pl-6 hover:text-[#FFF] hover:font-bold transition duration-500 ease-in-out '>Accesories</li>
+                                <li className='text-[14px] text-[#ffffffac] pl-2 py-3 hover:border-1 border-[#fff] hover:pl-6 hover:text-[#FFF] hover:font-bold transition duration-500 ease-in-out '>Furniture</li>
+                                <li className='text-[14px] text-[#ffffffac] pl-2 py-3 hover:border-1 border-[#fff] hover:pl-6 hover:text-[#FFF] hover:font-bold transition duration-500 ease-in-out '>Electronics</li>
+                                <li className='text-[14px] text-[#ffffffac] pl-2 py-3 hover:border-1 border-[#fff] hover:pl-6 hover:text-[#FFF] hover:font-bold transition duration-500 ease-in-out '>Clothes</li>
+                                <li className='text-[14px] text-[#ffffffac] pl-2 py-3 hover:border-1 border-[#fff] hover:pl-6 hover:text-[#FFF] hover:font-bold transition duration-500 ease-in-out '>Bags</li>
+                                <li className='text-[14px] text-[#ffffffac] pl-2 py-3 hover:border-1 border-[#fff] hover:pl-6 hover:text-[#FFF] hover:font-bold transition duration-500 ease-in-out '>Home appliances</li>
                             </ul>
                         </div>
                     </div>

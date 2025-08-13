@@ -9,7 +9,6 @@ const Navebar = () => {
                     <div className='w-1/2'>
                         <div><img src={Logo} alt="" /></div>
                     </div>
-
                     <div className='w-1/2'>
                         <ul  className='flex items-center gap-4'> 
                             <li><a className='font-bold text-[#262626]  ' href="#">Home</a></li>

@@ -13,12 +13,15 @@
    
 }.slick-active{
     display: flex;
- 
+
 }
-.slick-active button {
-   background-color: black;
+.slick-active button{
+    background-color: black;
    width: 10px;
    height: 50px;
    padding: 15px 0 ;
-      
+
+}
+.slick-dots li button {
+    color: transparent;
 }
