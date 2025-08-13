@@ -3,7 +3,7 @@ import Container from './Container'
 import { FaBars, FaCartArrowDown, FaUser } from 'react-icons/fa'
 import { IoMdSearch } from 'react-icons/io'
 import { MdArrowDropDownCircle } from 'react-icons/md'
-// import Imgp from '../assets/image.png'
+import Imgo from '../assets/boxx.png'
 
 const Banner = () => {
     let [category, setCategory] = useState(false)
@@ -76,7 +76,7 @@ const Banner = () => {
                              {chekList &&
                                 <div className='w-[360px] h-[241px] border-2 border-amber-200 absolute top-8 left-[-100px]  '>
                                     <div className='flex h-[50%] bg-[#F5F5F3]'>
-                                        <div className=''><h2>wrong</h2></div>
+                                        <div className=''><img className='mx-4 py-4' src={Imgo} alt="" /></div>
                                         <div className='pt-5 pl-4'> <h2 className='font-bold text-[14px]'>Black Smart Watch</h2>
                                             <p className='font-bold text-[14px]'>$44.00</p>
                                         </div>
