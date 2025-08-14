@@ -5,7 +5,7 @@ import { FaHeart, FaShoppingCart } from 'react-icons/fa'
 import { MdLoop } from 'react-icons/md'
 
 const ProductApi = () => {
-    let data = useContext(apiData)
+    
     return (
         <>
             <Container>
