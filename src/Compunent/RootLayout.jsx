@@ -8,6 +8,8 @@ import BannerOffer from './BannerOffer'
 import ProductApi from './ProductApi'
 import AllProductapi from './AllProductapi'
 import ProductApi2 from './ProductApi2'
+import Ads from './Ads'
+import SpecialOffers from './SpecialOffers'
 // import Home from '../page/Home'
 
 const RootLayout = () => {
@@ -19,6 +21,8 @@ const RootLayout = () => {
         <BannerOffer/>
         <ProductApi/>
         <ProductApi2/>
+        <Ads/>
+        <SpecialOffers/>
         {/* <AllProductapi/> */}
         <Footer/>
         </>

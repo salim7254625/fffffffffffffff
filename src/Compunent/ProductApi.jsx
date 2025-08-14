@@ -44,10 +44,11 @@ const ProductApi = () => {
     return (
         <>
             <Container>
+                <div><h2 className='font-bold text-[39px]'>New Arrivals</h2></div>
                 <Slider {...settings}>
                     {
                         dataa.map((item) => (
-                            <div  className='mt-7  w-[100%]  relative group   '>
+                            <div className='mt-7  w-[100%]  relative group   '>
                                 <div className=' relative hob m-2'><img className='w-full relative group' src={item.images} alt="" />
                                     <h1 className=' abb absolute top-[10px] left-[10px] bg-[#000000] py-2 px-7 text-[#FFF]  '>NEW</h1>
 
