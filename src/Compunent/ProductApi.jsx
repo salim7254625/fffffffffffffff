@@ -3,7 +3,7 @@ import Productimg from '../assets/apiimg.png'
 import Container from './Container'
 import { FaHeart, FaShoppingCart } from 'react-icons/fa'
 import { MdLoop } from 'react-icons/md'
-import { apiData } from '../../../project/src/Compunent/ContextApi'
+
 const ProductApi = () => {
     let data = useContext(apiData)
     return (
