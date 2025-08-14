@@ -16,7 +16,7 @@
 
 }
 .slick-active button{
-    background-color: black;
+    /* background-color: black; */
    width: 10px;
    height: 50px;
    padding: 15px 0 ;

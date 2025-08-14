@@ -2,16 +2,15 @@
 import { createBrowserRouter, createRoutesFromElements, Route, RouterProvider } from 'react-router-dom';
 
 import RootLayout from './Compunent/RootLayout'
-import Footer from './Compunent/Footer';
-import Navbar from './Compunent/Navbar';
-// import Home from './page/Home';
-// import Banner from './Compunent/Banner';
+import Home from './page/Home';
+import Shop from './page/Shop';
+
 
 
 let router = createBrowserRouter(createRoutesFromElements(
-  <Route element={<RootLayout/>}>
-    <Route path="/" element={<Navbar/>}></Route>
-    <Route path="/" element={<Footer/>}></Route>
+  <Route  element={<RootLayout/>}>
+   <Route path='/' element={<Home />}></Route>
+    <Route path='/shop' element={<Shop />} ></Route>    
   </Route>
 ))
   function App(){

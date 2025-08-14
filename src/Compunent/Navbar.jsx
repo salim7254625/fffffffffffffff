@@ -11,8 +11,8 @@ const Navebar = () => {
                     </div>
                     <div className='w-1/2'>
                         <ul  className='flex items-center gap-4'> 
-                            <li><a className='font-bold text-[#262626]  ' href="#">Home</a></li>
-                            <li><a className='font-bold text-[#767676] hover:text-[#262626] ' href="#">Shop</a></li>
+                            <li><a className='font-bold text-[#262626]  ' href="/">Home</a></li>
+                            <li><a className='font-bold text-[#767676] hover:text-[#262626] ' href="/Shop">Shop</a></li>
                             <li><a className='font-bold text-[#767676] hover:text-[#262626] ' href="#">About</a></li>
                             <li><a className='font-bold text-[#767676] hover:text-[#262626] ' href="#">Contacts</a></li>
                             <li><a className='font-bold text-[#767676] hover:text-[#262626] ' href="#">Journal</a></li>
