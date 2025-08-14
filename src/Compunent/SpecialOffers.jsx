@@ -9,10 +9,10 @@ const SpecialOffers = () => {
         <Container>
             <div><h2 className='font-bold text-[39px]'>Special Offers.</h2></div>
             <div className='flex gap-4 my-10'>
-                <img src={SpecialOffers0} alt="" />
-                <img src={SpecialOffers2} alt="" />
-                <img src={SpecialOffers3} alt="" />
-                <img src={SpecialOffers4} alt="" />
+                <div><img src={SpecialOffers0} alt="" /></div>
+                <div><img src={SpecialOffers2} alt="" /></div>
+                <div><img src={SpecialOffers3} alt="" /></div>
+                <div><img src={SpecialOffers4} alt="" /></div>              
             </div>
 
         </Container>

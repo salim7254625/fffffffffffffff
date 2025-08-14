@@ -6,7 +6,7 @@ const Ads = () => {
   return (
     <Container>
 
-    <div className='my-20'>
+    <div className='my-20 mx-auto'>
       <img src={ADS} alt="" />
     </div>
     </Container>
