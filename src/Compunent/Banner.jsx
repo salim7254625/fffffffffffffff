@@ -74,7 +74,7 @@ const Banner = () => {
                         <div className=' relative ' ref={chek} ><FaCartArrowDown />
 
                              {chekList &&
-                                <div className='w-[360px] h-[241px] border-2 border-amber-200 absolute top-8 left-[-100px]  '>
+                                <div className='w-[360px] h-[241px] border-2 border-amber-200 absolute top-8 right-0  '>
                                     <div className='flex h-[50%] bg-[#F5F5F3]'>
                                         <div className=''><img className='mx-4 py-4' src={Imgo} alt="" /></div>
                                         <div className='pt-5 pl-4'> <h2 className='font-bold text-[14px]'>Black Smart Watch</h2>
