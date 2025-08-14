@@ -7,7 +7,7 @@ import Container from './Container'
 const SpecialOffers = () => {
     return (
         <Container>
-            <div><h2 className='font-bold text-[39px]'>Special Offers</h2></div>
+            <div><h2 className='font-bold text-[39px]'>Special Offers.</h2></div>
             <div className='flex gap-4 my-10'>
                 <img src={SpecialOffers0} alt="" />
                 <img src={SpecialOffers2} alt="" />
