@@ -6,6 +6,8 @@ import Banner from './Banner'
 import BannerSlick from './BannerSlick'
 import BannerOffer from './BannerOffer'
 import ProductApi from './ProductApi'
+import AllProductapi from './AllProductapi'
+import ProductApi2 from './ProductApi2'
 // import Home from '../page/Home'
 
 const RootLayout = () => {
@@ -16,6 +18,8 @@ const RootLayout = () => {
         <BannerSlick/>
         <BannerOffer/>
         <ProductApi/>
+        <ProductApi2/>
+        {/* <AllProductapi/> */}
         <Footer/>
         </>
     )
