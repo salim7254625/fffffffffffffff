@@ -4,14 +4,14 @@ import { MdLoop } from 'react-icons/md'
 import { Link } from 'react-router-dom'
 
 
-const Post = ({ info }) => {
+const Post = ({ currentPosts }) => {
     return (
         <>
         <div className='flex flex-wrap justify-between gap-5'>
 
             {
                 
-                info.map((item) => (
+                currentPosts.map((item) => (
                     <div className='w-[32%]  relative group   '>
                         <div className=' relative hob m-2'>
                             <Link >

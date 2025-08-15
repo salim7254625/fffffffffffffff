@@ -1,4 +1,4 @@
-import React, { useContext } from 'react'
+import React, { useContext, useState } from 'react'
 import { ApiData } from './ContextApi'
 import Container from './Container'
 import { FaBars, FaHeart, FaShoppingCart } from 'react-icons/fa'
@@ -9,6 +9,18 @@ import Post from './Post'
 
 const AllProductapi = () => {
     let info = useContext(ApiData)
+    let [parpage , setParpage] =useState(6)
+    let [currentPage, setCurrentPage] = useState(1)
+    let indexOfLastPost = currentPage * parpage;
+    let indexOfFirstPost = indexOfLastPost - parpage;
+    let currentPosts = info.slice(indexOfFirstPost, indexOfLastPost);
+
+    let totalPages = []
+    for (let i = 1; i <= Math.ceil(info.length / parpage); i++) {
+        totalPages.push(i)
+    }
+    
+    
     return (
         <Container>
 
@@ -35,39 +47,10 @@ const AllProductapi = () => {
                 </div>
             </div>
             <div className=' '>
-                <Post info={info} />     
+                <Post currentPosts={currentPosts} />     
             </div>
 
-
-            {/* {
-                        dataa.map((item) => (
-                            <div  className='mt-30  w-[100%]  relative group   '>
-                                <div className=' relative hob m-2'><img className='w-full relative group' src={item.images} alt="" />
-                                    <h1 className=' abb absolute top-[10px] left-[10px] bg-[#000000] py-2 px-7 text-[#FFF]  '>NEW</h1>
-                                    <div className='absolute bottom-0 right-0 bg-[#FFF] opacity-0 group-hover:opacity-100 transition duration-300 ease-in-out w-full'>
-                                        <div className='flex items-center gap-4 py-2 cursor-pointer justify-end'>
-                                            <p>Add to Wish List</p>
-                                            <FaHeart />
-                                        </div>
-                                        <div className='flex items-center gap-4 py-2 cursor-pointer justify-end'>
-                                            <MdLoop />
-                                        </div>
-                                        <div className='flex items-center gap-4 py-2 cursor-pointer justify-end'>
-                                            <p>Add to Cart</p>
-                                            <FaShoppingCart />
-                                        </div>
-                                    </div>
-                                </div>
-                                <div className='flex justify-around px-5 py-3'>
-                                    <div>{item.title}</div>
-                                    <div> {item.price + " " + "$"}</div>
-                                </div>
-                            </div>
-                        ))
-                    } */}
-
-
-            <Pagination />
+            <Pagination totalPages={totalPages} />
         </Container>
     )
 }
