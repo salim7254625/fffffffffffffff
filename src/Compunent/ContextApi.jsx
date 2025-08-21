@@ -1,12 +1,8 @@
 import axios from 'axios'
 import React, { createContext, useEffect, useState } from 'react'
-
 let ApiData = createContext()
-
-const ContextApi = ({ children }) => {
-  
+const ContextApi = ({ children }) => { 
   let [info, setInfo] = useState([])
-
   let getData = () => {
     axios.get("https://dummyjson.com/products").then((responc) => {
       setInfo(responc.data.products);

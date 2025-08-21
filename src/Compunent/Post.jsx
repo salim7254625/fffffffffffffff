@@ -12,8 +12,8 @@ const Post = ({ currentPosts }) => {
             {
                 
                 currentPosts.map((item) => (
-                    <div className='w-[32%]  relative group   '>
-                        <div className=' relative hob m-2'>
+                    <div className='w-[48%]  relative group border-1 border-amber-100 mt-4 shadow-xl'>
+                        <div className=' relative hob m-2  '>
                             <Link >
                                 <img className='w-full relative group' src={item.images} alt="" />
                             </Link>

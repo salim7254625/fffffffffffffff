@@ -5,7 +5,6 @@ import Navebar from '../Compunent/Navbar'
 const RootLayout = () => {
     return (
         <>
-    
       <Navebar  />
         <Outlet/>
         <Footer/>

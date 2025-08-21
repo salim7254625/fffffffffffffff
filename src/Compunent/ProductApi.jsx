@@ -6,12 +6,11 @@ import { FaArrowAltCircleLeft, FaArrowAltCircleRight, FaHeart, FaShoppingCart } 
 import { MdLoop } from 'react-icons/md'
 import { Link } from 'react-router-dom'
 
-
-
 function SampleNextArrow(props) {
     const { style, onClick } = props;
     return (
-        <div className='lg:w-[50px] w-[30px] lg:h-[50px] h-[30px] border-none rounded-full flex justify-center items-center bg-amber-800 absolute top-[50%] translate-y-[-50%] right-0 z-[1]' onClick={onClick}
+        <div className='lg:w-[50px] w-[30px] lg:h-[50px] h-[30px] border-none rounded-full flex justify-center 
+        items-center bg-amber-800 absolute top-[50%] translate-y-[-50%] right-0 z-[1]' onClick={onClick}
         >
             <FaArrowAltCircleRight className='lg:w-[30px] w-[20px] lg:h-[30px] h-[20px] cursor-pointer' />
         </div>
@@ -20,12 +19,12 @@ function SampleNextArrow(props) {
 function SamplePrevArrow(props) {
     const { style, onClick } = props;
     return (
-        <div className='lg:w-[50px] w-[50px] lg:h-[50px] h-[50px]  border-none rounded-full flex justify-center items-center bg-amber-800 absolute top-[50%] translate-y-[-50%] left-0 z-[1]' onClick={onClick}>
+        <div className='lg:w-[50px] w-[50px] lg:h-[50px] h-[50px]  border-none rounded-full flex  justify-center
+         items-center bg-amber-800 absolute top-[50%] translate-y-[-50%] left-0 z-[1]' onClick={onClick}>
             <FaArrowAltCircleLeft className='lg:w-[30px] w-[20px] lg:h-[30px] h-[20px] cursor-pointer ' />
         </div>
     );
 }
-
 const ProductApi = () => {
     let dataa = useContext(ApiData)
     var settings = {
@@ -37,8 +36,6 @@ const ProductApi = () => {
         nextArrow: <SampleNextArrow />,
         prevArrow: <SamplePrevArrow />,
     }
-
-
     return (
         <>
             <Container>
@@ -50,8 +47,7 @@ const ProductApi = () => {
                                 <div className=' relative hob m-2'>
                                    <Link to = {"/Shop"}>
                                         <img className='w-full relative group' src={item.images} alt="" />
-                                   </Link>
-                                   
+                                   </Link>                             
                                     <h1 className=' abb absolute top-[10px] left-[10px] bg-[#000000] py-2 px-7 text-[#FFF]  '>NEW</h1>
                                     <div className='absolute bottom-0 right-0 bg-[#FFF] opacity-0 group-hover:opacity-100 transition duration-300 ease-in-out w-full'>
                                         <div className='flex items-center gap-4 py-2 cursor-pointer justify-end'>
@@ -75,10 +71,8 @@ const ProductApi = () => {
                         ))
                     }
                 </Slider>
-
             </Container>
         </>
     )
 }
-
 export default ProductApi

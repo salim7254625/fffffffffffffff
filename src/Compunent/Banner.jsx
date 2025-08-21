@@ -30,10 +30,10 @@ const Banner = () => {
         },[cateRef,chek])
     })
     return (
-        <div>
+        <div className='bg-[#F5F5F3]'>
             <Container>
 
-                <div className='flex justify-between items-center py-8 px-7 bg-[#F5F5F3]'>
+                <div className='flex justify-between items-center py-8 px-7 '>
                     <div className='w-1/4 flex items-center relative group'>
                         <div><FaBars /></div>
                         <div className=' pl-3 '><p>Shop by Category</p></div>
