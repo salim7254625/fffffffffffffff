@@ -14,7 +14,7 @@ const Post = ({ currentPosts }) => {
                 currentPosts.map((item) => (
                     <div className='w-[48%]  relative group border-1 border-amber-100 mt-4 shadow-xl'>
                         <div className=' relative hob m-2  '>
-                            <Link >
+                            <Link to={`/shop/${item.id}`}>
                                 <img className='w-full relative group' src={item.images} alt="" />
                             </Link>
                             <h1 className=' abb absolute top-[10px] left-[10px] bg-[#000000] py-2 px-7 text-[#FFF]  '>NEW</h1>

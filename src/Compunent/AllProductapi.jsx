@@ -36,6 +36,10 @@ let prev =()=>{
         setCurrentPage((state)=>state - 1 )
     }
 }
+let handelePerepageChange = (e)=>{
+setParpage(e.target.value)
+
+}
     return (
         <Container>
             <div className='flex justify-between py-12  px-5'>
@@ -50,12 +54,12 @@ let prev =()=>{
                             <div><FaBars /></div>
                         </div>
                         <div>
-                            <label htmlFor="">Show</label>
-                            <select name=" " id="">
-                                <option value="">10</option>
-                                <option value="">10</option>
-                                <option value="">10</option>
-                                <option value="">10</option>
+                            <label pr-2 htmlFor="">Show</label>
+                            <select onChange={handelePerepageChange} name=" " id="" className='py-1 px-4 border-2 border-[#262626]'>
+                                <option value="6">6</option>
+                                <option value="10">10</option>
+                                <option value="15">15</option>
+                                <option value="20">20</option>
                             </select>
                         </div>
                     </div>
